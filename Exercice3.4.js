@@ -9,17 +9,22 @@ let number = new Number(readlineSync.question(" ent un element du tableau "));
 array.push(number);
 arraycopy = JSON.parse(JSON.stringify(array));
 }
-console.log (array);
-console.log(Math.max.apply(array));
-console.log(Math.min.apply(array));
-let max = array[i];
-let min = array[i];
-while ( i < n {
-    if (max < array[i+1] );
-      max = array[i+1];
-    if (array[i+1] < min);
-      min = array[i+1];
-      i=i+1)
+console.log (""+array);
+let max = array[0];
+let min = array[0];
+for  (let i = 0; i<n; i++ ) 
+{
+        
+    if (max < array[i] )
+        {
+      max = array[i];
+        }
+     if ( min > array[i] )
+   {
+      min = array[i];
+   }
+      
 }
-console.log(max);
-console.log(min);
+console.log("The size is " + array.length);
+console.log("the maximum number is "+ max);
+console.log("the minimum number is "+min);
