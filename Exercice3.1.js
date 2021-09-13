@@ -1,5 +1,4 @@
 const readlineSync = require("readline-sync");
-
 let n= new Number(readlineSync.question("enter the nuber of table elements "));
 let array=[];
 let res =0;
