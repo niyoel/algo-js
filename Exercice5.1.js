@@ -1,21 +1,20 @@
 const readlineSync = require("readline-sync");
-function askTvSeri(name, prodyear, cast) {
-    
-    this.name = name; 
-    this.prodyear = prodyear;
-    this.cast = cast
-    
-    this.getDetails = function () {
-     return this.name + "  " + this.prodyear +" " + cast;
-    
-    }
-             
-}       
-        let seriename = readlineSync.question("enter the name of serie");
-        let prodyear = readlineSync.question("enter the year of production"); 
-        let cast = readlineSync.question("enter the member names of casting ");
-        askTvSeri = new askTvSeri( seriename, prodyear, cast);
-        console.log(askTvSeri.getDetails()); 
-
-
+let askTvSerie ={
+    n: new Number(readlineSync.question("actors number")),
+    cast: readlineSync.question("actors name"),  
+    casting :function(){
+        for(i =0; i < n; i++)
+        return this.cast;
   
+    },
+        serie_desc: {
+            nom:' cass',
+            yearprod:'2019'
+        }
+    }
+let serie = Object.create(askTvSerie);
+
+console.log(serie.serie_desc);
+console.log(serie.cast);
+console.log(serie.n);
+
